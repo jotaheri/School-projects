@@ -1,0 +1,45 @@
+import csv
+import re
+
+output_file = "2023.csv"
+
+# Ask the user for the search term
+search_term = ("Remote: Älskar du Python/Django? Ansök via SSH!")
+
+# Ask the user to choose the search mode (exact/contains)
+search_mode = ("exact")
+
+# Ask the user for the column name to search
+search_column = ("headline")
+
+# Ask the user for the column name to print
+print_column = ("keywords_extracted_occupation")
+
+# Prepare the regex pattern based on the search mode
+if search_mode.lower() == 'exact':
+    pattern = re.compile(re.escape(search_term), flags=re.IGNORECASE)
+else:
+    pattern = re.compile(r'\b{}\b'.format(re.escape(search_term)), flags=re.IGNORECASE)
+
+# List to store data from the specified print column for rows where the search term is found in the search column
+column_data = []
+
+# Read the CSV file
+with open(output_file, 'r', encoding='utf-8') as csv_file:
+    csv_reader = csv.DictReader(csv_file)
+    # Ensure both columns exist in the CSV
+    if search_column not in csv_reader.fieldnames or print_column not in csv_reader.fieldnames:
+        print(f"Error: Check your column names. Available columns are: {csv_reader.fieldnames}")
+    else:
+        # Iterate over each row in the CSV
+        for row in csv_reader:
+            # Check if the search column exists and contains the search term according to the selected mode
+            if search_column in row and pattern.search(row[search_column]):
+                # If found, store the data from the print column if it exists
+                if print_column in row:
+                    column_data.append(row[print_column])
+
+# Print the data from the specified print column that matches the search term in the search column
+print(f"\nData from '{print_column}' for rows where '{search_column}' contains the search term:")
+for data in column_data:
+    print(data)

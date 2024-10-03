@@ -1,0 +1,40 @@
+import json
+import csv
+
+def flatten_json(json_obj, prefix=''):
+    flat_data = {}
+    for key, value in json_obj.items():
+        if isinstance(value, dict):
+            flat_data.update(flatten_json(value, prefix + key + '_'))
+        elif isinstance(value, list):
+            for index, item in enumerate(value):
+                if isinstance(item, dict):
+                    flat_data.update(flatten_json(item, prefix + key + f'_{index}_'))
+                else:
+                    flat_data[prefix + key + f'_{index}'] = item
+        else:
+            flat_data[prefix + key] = value
+    return flat_data
+
+input_file = '2023.jsonl'
+output_file = '2023.csv'
+
+# First pass to determine all possible fieldnames
+all_fieldnames = set()
+with open(input_file, 'r', encoding='utf-8') as jsonl_file:
+    for line in jsonl_file:
+        json_obj = json.loads(line)
+        flattened_json = flatten_json(json_obj)
+        all_fieldnames.update(flattened_json.keys())
+
+# Second pass to write data
+with open(input_file, 'r', encoding='utf-8') as jsonl_file, \
+        open(output_file, 'w', newline='', encoding='utf-8') as csv_file:
+    csv_writer = csv.DictWriter(csv_file, fieldnames=list(all_fieldnames))
+    csv_writer.writeheader()
+    for line in jsonl_file:
+        json_obj = json.loads(line)
+        flattened_json = flatten_json(json_obj)
+        # Encode strings to handle encoding issues
+        csv_writer.writerow({k: v.encode('utf-8', 'ignore').decode('utf-8') if isinstance(v, str) else v
+                             for k, v in flattened_json.items()})
