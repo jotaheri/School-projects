@@ -1,0 +1,10 @@
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\bin\Debug\inlamningsuppgift3.exe.config
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\bin\Debug\inlamningsuppgift3.exe
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\bin\Debug\inlamningsuppgift3.pdb
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\obj\Debug\inlamningsuppgift3.csproj.AssemblyReference.cache
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\obj\Debug\inlamningsuppgift3.Form1.resources
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\obj\Debug\inlamningsuppgift3.Properties.Resources.resources
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\obj\Debug\inlamningsuppgift3.csproj.GenerateResource.cache
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\obj\Debug\inlamningsuppgift3.csproj.CoreCompileInputs.cache
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\obj\Debug\inlamningsuppgift3.exe
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift3\obj\Debug\inlamningsuppgift3.pdb

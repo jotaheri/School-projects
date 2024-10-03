@@ -1,0 +1,14 @@
+C:\Users\johan\skolarbete\Intro till C#\testApp\bin\Debug\net8.0\testApp.exe
+C:\Users\johan\skolarbete\Intro till C#\testApp\bin\Debug\net8.0\testApp.deps.json
+C:\Users\johan\skolarbete\Intro till C#\testApp\bin\Debug\net8.0\testApp.runtimeconfig.json
+C:\Users\johan\skolarbete\Intro till C#\testApp\bin\Debug\net8.0\testApp.dll
+C:\Users\johan\skolarbete\Intro till C#\testApp\bin\Debug\net8.0\testApp.pdb
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\testApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\testApp.AssemblyInfoInputs.cache
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\testApp.AssemblyInfo.cs
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\testApp.csproj.CoreCompileInputs.cache
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\testApp.dll
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\refint\testApp.dll
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\testApp.pdb
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\testApp.genruntimeconfig.cache
+C:\Users\johan\skolarbete\Intro till C#\testApp\obj\Debug\net8.0\ref\testApp.dll

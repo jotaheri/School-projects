@@ -1,0 +1,14 @@
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\bin\Debug\net8.0\Inlamningsuppgift1a.exe
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\bin\Debug\net8.0\Inlamningsuppgift1a.deps.json
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\bin\Debug\net8.0\Inlamningsuppgift1a.runtimeconfig.json
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\bin\Debug\net8.0\Inlamningsuppgift1a.dll
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\bin\Debug\net8.0\Inlamningsuppgift1a.pdb
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\Inlamningsuppgift1a.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\Inlamningsuppgift1a.AssemblyInfoInputs.cache
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\Inlamningsuppgift1a.AssemblyInfo.cs
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\Inlamningsuppgift1a.csproj.CoreCompileInputs.cache
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\Inlamningsuppgift1a.dll
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\refint\Inlamningsuppgift1a.dll
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\Inlamningsuppgift1a.pdb
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\Inlamningsuppgift1a.genruntimeconfig.cache
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1a\obj\Debug\net8.0\ref\Inlamningsuppgift1a.dll

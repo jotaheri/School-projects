@@ -1,0 +1,47 @@
+Pseudokod för inlämningsuppgift 2, L0002B, Johannes Taheri
+
+1. Starta programmet
+    Ställ in inmatnings- och utmatningskodning till Unicode för att stödja svenska tecken.
+
+2. Skapa en mall för säljare
+    Definiera en klass med följande egenskaper:
+        Namn
+        Personnummer
+        Distrikt
+        Antal sålda artiklar
+    Skapa en konstruktor för att initiera dessa egenskaper.    
+
+3. Fråga användaren hur många säljare som ska registreras
+    Läs in antalet säljare och kontrollera att inmatningen är ett giltigt heltal.
+    Upprepa frågan tills användaren matar in ett giltigt heltal.
+
+4. Skapa en tom lista för att lagra säljarobjekt
+
+5. Samla in säljarinformation
+    För varje säljare:
+        Fråga efter namn, personnummer, distrikt och antal sålda artiklar.
+        Kontrollera att namn, personnummer och distrikt inte är tomma.
+        Kontrollera att antal sålda artiklar är ett giltigt heltal.
+        Skapa ett säljare-objekt med de insamlade uppgifterna och lägg till det i listan.
+
+6. Sortera säljarlistan
+    Sortera säljarna i stigande ordning efter antalet sålda artiklar.
+
+7. Skriv ut en rubrik
+    Formatera och skriv ut en rubrik för kolumnerna: Namn, Personnummer, Distrikt, Antal sålda artiklar.
+
+8. Skriv säljarinformationen till skärm och fil
+    Öppna en fil för att skriva ut information om säljarna.
+    För varje bonusnivå (1-4):
+        Skriv ut säljarens uppgifter i formaterad form.
+        Uppdatera nivåsumman för varje nivå.
+        När alla säljare i en viss nivå har skrivits ut, skriv ut sammanfattningen för nivån.
+
+9. Sammanfatta resultatet per bonusnivå
+    Nivå 1: Under 50 sålda artiklar.
+    Nivå 2: 50-99 sålda artiklar.
+    Nivå 3: 100-199 sålda artiklar.
+    Nivå 4: Över 199 sålda artiklar.
+
+10. Avsluta programmet
+    Meddela att resultatet har skrivits till filen.

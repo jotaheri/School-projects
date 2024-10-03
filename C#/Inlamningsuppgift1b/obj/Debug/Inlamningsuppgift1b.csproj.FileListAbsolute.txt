@@ -1,0 +1,20 @@
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\bin\Debug\Inlamningsuppgift1b.exe.config
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\bin\Debug\Inlamningsuppgift1b.exe
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\bin\Debug\Inlamningsuppgift1b.pdb
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.csproj.AssemblyReference.cache
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.Form1.resources
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.Properties.Resources.resources
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.csproj.GenerateResource.cache
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.csproj.CoreCompileInputs.cache
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.exe
+C:\Users\johan\OneDrive\Skrivbord\SVP HT24\Introduktion till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.pdb
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.csproj.AssemblyReference.cache
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.exe
+C:\Users\johan\skolarbete\Intro till C#\inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.pdb
+C:\Users\johan\skolarbete\Intro till C#\Inlamningsuppgift1b\bin\Debug\Inlamningsuppgift1b.exe.config
+C:\Users\johan\skolarbete\Intro till C#\Inlamningsuppgift1b\bin\Debug\Inlamningsuppgift1b.exe
+C:\Users\johan\skolarbete\Intro till C#\Inlamningsuppgift1b\bin\Debug\Inlamningsuppgift1b.pdb
+C:\Users\johan\skolarbete\Intro till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.Form1.resources
+C:\Users\johan\skolarbete\Intro till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.Properties.Resources.resources
+C:\Users\johan\skolarbete\Intro till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.csproj.GenerateResource.cache
+C:\Users\johan\skolarbete\Intro till C#\Inlamningsuppgift1b\obj\Debug\Inlamningsuppgift1b.csproj.CoreCompileInputs.cache
