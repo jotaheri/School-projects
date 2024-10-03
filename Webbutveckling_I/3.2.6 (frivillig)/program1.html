@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>program1</title>
+    <link rel="stylesheet" href="program1.css?rnd=12345">
+</head>
+<body>
+
+    <h2>Dynamiskt formulär med jQuery Validaton Plugin</h2>
+
+    <form id="myForm">
+        <fieldset>
+            <legend>Personlig information</legend>
+            <label for="firstName">Förnamn:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+    
+            <label for="lastName">Efternamn:</label>
+            <input type="text" id="lastName" name="lastName">
+        </fieldset>
+
+        <fieldset>
+            <legend>Prenumeration</legend>
+            <label for="newsletter">Prenumerera på nyhetsbrev:</label>
+            <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+            <label for="email">E-postadress:</label>
+            <input type="text" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Kön</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Man</label>
+    
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Kvinna</label>
+    
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Annat</label>
+        </fieldset>
+
+        <button type="submit">Skicka</button>
+    </form>    
+
+    <!-- jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery Validation Plugin -->
+    <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="program1.js"></script>
+
+</body>
+</html>

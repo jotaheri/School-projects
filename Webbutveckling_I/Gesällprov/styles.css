@@ -1,0 +1,76 @@
+
+
+#dark-mode {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.header-container h3 {
+    flex: 1; 
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.custom-label-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+    text-indent: -3.4em;
+}
+.custom-label-flipswitch.ui-flipswitch .ui-flipswitch-off {
+    text-indent: 0.5em;
+}
+
+.ui-popup {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+#feedbackWindow {
+    width: 200%;
+    max-width: 400px;
+    height: auto;
+}
+
+#feedbackWindow .ui-btn {
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+#feedbackWindow2 {
+    width: 200%;
+    max-width: 400px;
+    height: auto;
+}
+
+#feedbackWindow2 .ui-btn {
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+#feedbackWindow3 {
+    width: 200%;
+    max-width: 400px;
+    height: auto;
+}
+
+#feedbackWindow3 .ui-btn {
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+.my-footer {
+    overflow: hidden;
+}

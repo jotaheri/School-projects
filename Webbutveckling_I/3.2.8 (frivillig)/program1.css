@@ -1,0 +1,20 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#popupWindow {
+    max-width: 400px;
+}
+
+#popupWindow .ui-btn-b, #popupWindow .ui-btn-a {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.custom-label-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+    text-indent: -3.4em;
+}
+.custom-label-flipswitch.ui-flipswitch .ui-flipswitch-off {
+    text-indent: 0.5em;
+}
