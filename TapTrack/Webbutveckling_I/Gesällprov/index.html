@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gesällprov</title>
+    <link rel="stylesheet" href="styles.css?rnd=12345">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+
+    <div data-role="page" class="ui-page-theme-a" id="homePage">
+
+        <div data-role="header" data-id="header" data-position="fixed">
+            <div class="header-container">
+                <form id="dark-mode">
+                    <label for="flip-checkbox-2"><strong>Mörkt läge:</strong></label>
+                    <input type="checkbox" data-role="flipswitch" name="flip-checkbox" id="flip-checkbox" data-on-text="Ljust" 
+                    data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
+                </form>
+                <h3>Hem</h3>
+            </div>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#secondPage">Sida två</a></li>
+                    <li><a href="#aboutMe">Om mig</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="content" class="ui-content">         
+            <p>Välkommen till min hemsida som jag utvecklar med hjälp av jQuery Mobiles gränssnittsbibliotek för mobila enheter</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-id="footer" class="my-footer">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#feedbackWindow" data-rel="popup" data-position-to="window" 
+                        data-transition="pop" id="popupBtn">Lämna feedback</a>
+                        <div data-role="popup" id="feedbackWindow" data-overlay-theme="b" data-dismissible="false">
+                            <div data-role="header" data-theme="a">
+                                <h1>Feedback formulär</h1>
+                            </div>
+                            <div role="main" class="ui-content"></div>
+                                <p>Var god fyll i fälten nedan för att lämna feedback</p>
+                                <form id="feedbackForm">
+                                    <fieldset data-role="controlgroup" data-mini="true">
+                                        <label for="firstName" class="ui-hidden-accessible">Förnamn</label>
+                                        <input type="text" name="firstName" id="firstName" placeholder="Förnamn" value="" autofocus>
+                                        <label for="lastName" class="ui-hidden-accessible">Efternamn</label>
+                                        <input type="text" name="lastName" id="lastName" placeholder="Efternamn" value="">  
+                                        <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                        <label for="checkbox-1">Jag vill vara anonym</label>
+                                    </fieldset>
+                                    <label for="textarea" class="ui-hidden-accessible">Meddelande:</label>
+                                    <textarea cols="25" rows="8" name="textarea" id="textarea" data-theme="a" data-mini="true" placeholder="Meddelande"></textarea>
+                                    <fieldset data-role="controlgroup" data-mini="true">
+                                        <input type="checkbox" name="checkbox" id="checkbox">
+                                        <label for="checkbox">Önskar få svar</label>
+                                        <label for="email" class="ui-hidden-accessible">E-postadress</label>
+                                        <input type="text" name="email" id="email" placeholder="E-postadress">
+                                    </fieldset>
+                    
+                                    <a href="#" class="ui-btn ui-shadow ui-btn-inline ui-mini" data-rel="back" id="closeBtn">Stäng</a>
+                                    <button type="submit" id="submit-6" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="sendBtn">Skicka</button>
+                                </form>
+                            </div>
+                    </li>
+                    <li><a href="mailto:johannestaheri@gmail.com">Mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" class="ui-page-theme-a" id="secondPage">
+
+        <div data-role="header">
+            <div class="header-container">
+                <form id="dark-mode">
+                    <label for="flip-checkbox-2"><strong>Mörkt läge:</strong></label>
+                    <input type="checkbox" data-role="flipswitch" name="flip-checkbox2" id="flip-checkbox2" data-on-text="Ljust" 
+                    data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
+                </form>
+                <h3>Sida två</h3>
+            </div>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#homePage">Hem</a></li>
+                        <li><a href="#aboutMe">Om mig</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        <div data-role="content" class="ui-content">
+            <p>Sida två</p>
+        </div>
+        
+        <div data-role="footer" data-position="fixed" class="my-footer">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#feedbackWindow2" data-rel="popup" data-position-to="window" 
+                        data-transition="pop" id="popupBtn2">Lämna feedback</a>
+                        <div data-role="popup" id="feedbackWindow2" data-overlay-theme="b" data-dismissible="false">
+                            <div data-role="header" data-theme="a">
+                                <h1>Feedback formulär</h1>
+                            </div>
+                            <div role="main" class="ui-content">
+                                <p>Var god fyll i fälten nedan för att lämna feedback</p>
+                                <form id="feedbackForm2">
+                                    <fieldset data-role="controlgroup" data-mini="true">
+                                        <label for="firstName2" class="ui-hidden-accessible">Förnamn</label>
+                                        <input type="text" name="firstName2" id="firstName2" placeholder="Förnamn" value="" autofocus>
+                                        <label for="lastName2" class="ui-hidden-accessible">Efternamn</label>
+                                        <input type="text" name="lastName2" id="lastName2" placeholder="Efternamn" value="">  
+                                        <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                        <label for="checkbox-2">Jag vill vara anonym</label>
+                                    </fieldset>
+                                    <label for="textarea2" class="ui-hidden-accessible">Meddelande:</label>
+                                    <textarea cols="25" rows="8" name="textarea2" id="textarea2" data-theme="a" data-mini="true" placeholder="Meddelande"></textarea>
+                                    <fieldset data-role="controlgroup" data-mini="true">
+                                        <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                        <label for="checkbox-3">Önskar få svar</label>
+                                        <label for="email2" class="ui-hidden-accessible">E-postadress</label>
+                                        <input type="text" name="email2" id="email2" placeholder="E-postadress">
+                                    </fieldset>
+                    
+                                    <a href="#" class="ui-btn ui-shadow ui-btn-inline ui-mini" data-rel="back" id="closeBtn2">Stäng</a>
+                                    <button type="submit" id="submit-6" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="sendBtn2">Skicka</button>
+                                </form>
+                            </div>    
+                        </div>
+                    </li>
+                    <li><a href="mailto:johannestaheri@gmail.com">Mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" class="ui-page-theme-a" id="aboutMe">
+
+        <div data-role="header">
+            <div class="header-container">
+                <form id="dark-mode">
+                    <label for="flip-checkbox-2"><strong>Mörkt läge:</strong></label>
+                    <input type="checkbox" data-role="flipswitch" name="flip-checkbox3" id="flip-checkbox3" data-on-text="Ljust" 
+                    data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
+                </form>
+                <h3>Om mig</h3>
+            </div>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#homePage">Hem</a></li>
+                        <li><a href="#secondPage">Sida två</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        <div data-role="content" class="ui-content">
+            <p>Om mig</p>
+        </div>
+        
+        <div data-role="footer" data-position="fixed" class="my-footer">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#feedbackWindow3" data-rel="popup" data-position-to="window" 
+                        data-transition="pop" id="popupBtn3">Lämna feedback</a>
+                        <div data-role="popup" id="feedbackWindow3" data-overlay-theme="b" data-dismissible="false">
+                            <div data-role="header" data-theme="a">
+                                <h1>Feedback formulär</h1>
+                            </div>
+                            <div role="main" class="ui-content">
+                                <p>Var god fyll i fälten nedan för att lämna feedback</p>
+                                <form id="feedbackForm3">
+                                    <fieldset data-role="controlgroup" data-mini="true">
+                                        <label for="firstName3" class="ui-hidden-accessible">Förnamn</label>
+                                        <input type="text" name="firstName3" id="firstName3" placeholder="Förnamn" value="" autofocus>
+                                        <label for="lastName3" class="ui-hidden-accessible">Efternamn</label>
+                                        <input type="text" name="lastName3" id="lastName3" placeholder="Efternamn" value="">  
+                                        <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                        <label for="checkbox-4">Jag vill vara anonym</label>
+                                    </fieldset>
+                                    <label for="textarea3" class="ui-hidden-accessible">Meddelande:</label>
+                                    <textarea cols="25" rows="8" name="textarea3" id="textarea3" data-theme="a" data-mini="true" placeholder="Meddelande"></textarea>
+                                    <fieldset data-role="controlgroup" data-mini="true">
+                                        <input type="checkbox" name="checkbox-5" id="checkbox-5">
+                                        <label for="checkbox-5">Önskar få svar</label>
+                                        <label for="email3" class="ui-hidden-accessible">E-postadress</label>
+                                        <input type="text" name="email3" id="email3" placeholder="E-postadress">
+                                    </fieldset>
+                    
+                                    <a href="#" class="ui-btn ui-shadow ui-btn-inline ui-mini" data-rel="back" id="closeBtn3">Stäng</a>
+                                    <button type="submit" id="submit-6" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini" id="sendBtn3">Skicka</button>
+                                </form>
+                            </div>    
+                        </div>
+                    </li>
+                    <li><a href="mailto:johannestaheri@gmail.com">Mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- jQuery mobile-->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- jQuery Validation Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

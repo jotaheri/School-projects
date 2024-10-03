@@ -1,0 +1,14 @@
+[server]
+headless = true
+port = $PORT
+enableCORS = false
+
+[app]
+main_module = "streamlit/Vega_bryggeri.py"
+
+
+[theme]
+primaryColor="#ffbf00"
+backgroundColor="#292929"
+secondaryBackgroundColor="#2f4f4f"
+textColor="#fffdd0"
