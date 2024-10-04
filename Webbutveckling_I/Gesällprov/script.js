@@ -1,3 +1,4 @@
+// Kod för #homePage //
 // Väntar tills sidan laddas och jQuery Mobile är klart
 $(document).on("pagebeforeshow", "#homePage", function() {
 
@@ -27,7 +28,8 @@ $(document).on("pagebeforeshow", "#homePage", function() {
         else {
             // Ändrar till mörkt tema (b)
             $("#homePage").removeClass("ui-page-theme-a").addClass("ui-page-theme-b");
-            
+
+            // Ändrar även temat på de andra sidorna
             $("#secondPage").removeClass("ui-page-theme-a").addClass("ui-page-theme-b");
             $("#aboutMe").removeClass("ui-page-theme-a").addClass("ui-page-theme-b");
         }
@@ -90,7 +92,7 @@ $(document).on("pagebeforeshow", "#homePage", function() {
         }
     });
 
-    // Döljer #email samt label som standard
+    // Döljer #email som standard
     $("#email").hide();
     // När checkboxen för svar klickas, visas #email fältet
     $("#checkbox").on("change", function() {
@@ -165,11 +167,10 @@ $(document).on("pagebeforeshow", "#homePage", function() {
     $.validator.addMethod("regex", function (value, element, regexp) {
         var re = new RegExp(regexp);
         return this.optional(element) || re.test(value);
-    });
-    
+    });  
 });
 
-// Kod för #secondPage
+// Kod för #secondPage //
 $(document).on("pagebeforeshow", "#secondPage", function() {
     // Kolla om "ui-page-theme-b" är satt på sidan och justera flipswitchens status därefter
     if ($("#secondPage").hasClass("ui-page-theme-b")) {
@@ -257,7 +258,7 @@ $(document).on("pagebeforeshow", "#secondPage", function() {
         }
     });
 
-    // Döljer #email samt label som standard
+    // Döljer #email som standard
     $("#email2").hide();
     // När checkboxen för svar klickas, visas #email fältet
     $("#checkbox-3").on("change", function() {
@@ -333,10 +334,9 @@ $(document).on("pagebeforeshow", "#secondPage", function() {
         var re = new RegExp(regexp);
         return this.optional(element) || re.test(value);
     });
-    
 });
 
-// Kod för #aboutMe
+// Kod för #aboutMe //
 $(document).on("pagebeforeshow", "#aboutMe", function() {
     // Kolla om "ui-page-theme-b" är satt på sidan och justera flipswitchens status därefter
     if ($("#aboutMe").hasClass("ui-page-theme-b")) {
@@ -424,7 +424,7 @@ $(document).on("pagebeforeshow", "#aboutMe", function() {
         }
     });
 
-    // Döljer #email samt label som standard
+    // Döljer #email som standard
     $("#email3").hide();
     // När checkboxen för svar klickas, visas #email fältet
     $("#checkbox-5").on("change", function() {
