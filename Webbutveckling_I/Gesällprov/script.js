@@ -500,4 +500,51 @@ $(document).on("pagebeforeshow", "#aboutMe", function() {
         var re = new RegExp(regexp);
         return this.optional(element) || re.test(value);
     });
+
+    // Kod för uppladdning av CV och personligt brev //
+    // Skapar eventhanterare för cvUpload
+    $("#cvUpload").on("change", function(event) {
+        var file = event.target.files[0]; // Hämtar den uppladdade filen
+
+        // Kontrollera om det är en pdf
+        if (file && file.type === "application/pdf") {
+            var fileReader = new FileReader();
+
+            // Läser in filen som en data-URL
+            fileReader.onload = function(e) {
+                var pdfData = e.target.result;
+                // Sätter PDF-data som källan för iframe
+                $("#cvIframe").attr("src", pdfData);
+                // Visar förhandsvisningsrutan
+                $("#cvPreview").show();
+            };
+            // Läser in PDF-filen
+            fileReader.readAsDataURL(file);
+        }
+        else {
+            alert("Vänligen ladda upp en PDF-fil.")
+        }
+    });
+    $("#resumeUpload").on("change", function(event) {
+        var file = event.target.files[0]; // Hämtar den uppladdade filen
+
+        // Kontrollera om det är en pdf
+        if (file && file.type === "application/pdf") {
+            var fileReader = new FileReader();
+
+            // Läser in filen som en data-URL
+            fileReader.onload = function(e) {
+                var pdfData = e.target.result;
+                // Sätter PDF-data som källan för iframe
+                $("#resumeIframe").attr("src", pdfData);
+                // Visar förhandsvisningsrutan
+                $("#resumePreview").show();
+            };
+            // Läser in PDF-filen
+            fileReader.readAsDataURL(file);
+        }
+        else {
+            alert("Vänligen ladda upp en PDF-fil.")
+        }
+    });
 });

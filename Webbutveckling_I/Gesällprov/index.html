@@ -21,8 +21,9 @@
             </div>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#secondPage" id="page1">Sida två</a></li>
-                    <li><a href="#aboutMe" id="page2">Om mig</a></li>
+                    <li><a href="#homePage" id="page1">Hem</a></li>
+                        <li><a href="#secondPage" id="page2">Sida två</a></li>
+                        <li><a href="#aboutMe" id="page3">Om mig</a></li>
                 </ul>
             </div>
         </div>
@@ -89,7 +90,8 @@
                 <div data-role="navbar">
                     <ul>
                         <li><a href="#homePage" id="page1">Hem</a></li>
-                        <li><a href="#aboutMe" id="page2">Om mig</a></li>
+                        <li><a href="#secondPage" id="page2">Sida två</a></li>
+                        <li><a href="#aboutMe" id="page3">Om mig</a></li>
                     </ul>
                 </div>
             </div>
@@ -158,6 +160,7 @@
                     <ul>
                         <li><a href="#homePage" id="page1">Hem</a></li>
                         <li><a href="#secondPage" id="page2">Sida två</a></li>
+                        <li><a href="#aboutMe" id="page3">Om mig</a></li>
                     </ul>
                 </div>
             </div>
@@ -165,10 +168,11 @@
         <div data-role="content" class="ui-content">
             <div class="my-content">
                 <p>Mitt namn är Johannes Taheri och jag studerar för närvarande tredje året på kandidatprogrammet 
-                    i Systemvetenskap vid Göteborgs universitet. Nedan listar jag bland annat tidigare projekt jag genomfört.</p>
-
+                    i Systemvetenskap vid Göteborgs universitet. Nedan listar jag mina tidigare projekt jag genomfört 
+                    samt en funktion för att ladda upp och visa CV och personligt brev.</p>
             </div>  
 
+            <h3>Projekt</h3>
             <div data-role="collapsible">
                 <h3>Mina projekt</h3>
                 <div data-role="collapsibleset" data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
@@ -201,6 +205,29 @@
                     </div>
                 </div>
             </div>
+
+            <h3>Ladda upp samt visa CV och personligt brev</h3>
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                    <h3>CV</h3>
+                    <input type="file" id="cvUpload" accept=".pdf">
+        
+                    <div id="cvPreview">
+                        <iframe id="cvIframe" width="100%" height="500px"></iframe>
+                    </div>
+                </div>
+
+                <div data-role="collapsible">
+                    <h3>Personligt brev</h3>
+                    <input type="file" id="resumeUpload" accept=".pdf">
+        
+                    <div id="resumePreview">
+                        <iframe id="resumeIframe" width="100%" height="500px"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
         
