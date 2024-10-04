@@ -5,22 +5,42 @@
     p {
         font-size: 18px;
     }
-    #popupBtn,
+
     #mail, #linkedIn,
     #page1, #page2 {
         font-size: 16px;
     }
+    #popupBtn, #mail, #linkedIn {
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+        height: 100%;
+        min-height: 44px; 
+        line-height: 24px; /* Samma som höjden på knappen för vertikal centrering */
+        text-align: center; /* Horisontell centrering */
+    }
+
     #feedbackWindow, #feedbackWindow2, #feedbackWindow3 {
         max-width: 300px !important;
     }
     #feedbackWindow h1, #feedbackWindow2 h1, #feedbackWindow3 h1 {
-        padding-left: 5px; /* Minska padding på vänster sida */
-        padding-right: 5px; /* Minska padding på höger sida */
-        margin-left: 0; /* Justera marginalen om nödvändigt */
-        margin-right: 0; /* Justera marginalen om nödvändigt */
+        padding-left: 5px;
+        padding-right: 5px; 
+        margin-left: 0; 
+        margin-right: 0; 
     }
     #feedbackWindow p, #feedbackWindow2 p, #feedbackWindow3 p {
         font-size: 14px;
+    }
+
+    .project-row {
+        flex-direction: column; /* Rada upp informationen vertikalt på mindre skärmar */
+        align-items: flex-start; /* Justera texten till vänster */
+        margin-bottom: 10px;
+    }
+
+    .project-row strong {
+        margin-bottom: 5px;
     }
 }
 

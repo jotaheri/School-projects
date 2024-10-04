@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gesällprov</title>
     <link rel="stylesheet" href="styles.css?rnd=12345">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -12,7 +13,6 @@
         <div data-role="header" data-id="header" data-position="fixed">
             <div class="header-container">
                 <form id="dark-mode">
-                    <label for="flip-checkbox-2"><strong>Mörkt läge:</strong></label>
                     <input type="checkbox" data-role="flipswitch" name="flip-checkbox" id="flip-checkbox" data-on-text="Ljust" 
                     data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
                 </form>
@@ -80,7 +80,6 @@
         <div data-role="header">
             <div class="header-container">
                 <form id="dark-mode">
-                    <label for="flip-checkbox-2"><strong>Mörkt läge:</strong></label>
                     <input type="checkbox" data-role="flipswitch" name="flip-checkbox2" id="flip-checkbox2" data-on-text="Ljust" 
                     data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
                 </form>
@@ -149,7 +148,6 @@
         <div data-role="header">
             <div class="header-container">
                 <form id="dark-mode">
-                    <label for="flip-checkbox-2"><strong>Mörkt läge:</strong></label>
                     <input type="checkbox" data-role="flipswitch" name="flip-checkbox3" id="flip-checkbox3" data-on-text="Ljust" 
                     data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
                 </form>
@@ -166,51 +164,42 @@
 
         <div data-role="content" class="ui-content">
             <div class="my-content">
-                <p>Om mig</p>
+                <p>Mitt namn är Johannes Taheri och jag studerar för närvarande tredje året på kandidatprogrammet 
+                    i Systemvetenskap vid Göteborgs universitet. Nedan listar jag bland annat tidigare projekt jag genomfört.</p>
+
             </div>  
-            
+
             <div data-role="collapsible">
                 <h3>Mina projekt</h3>
-                <table data-role="table" class="ui-responsive">
-                    <thead>
-                        <tr>
-                            <th>Projekt</th>
-                            <th>Beskrivning</th>
-                            <th>Tekniker</th>
-                            <th>Länk</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cosmic Evader</td>
-                            <td>Spel som jag utvecklade i ett skolprojekt i Python</td>
-                            <td>Python, PyGame</td>
-                            <td><a href="https://github.com/jotaheri/School-projects/tree/main/Cosmic%20Evader"
-                                target="_blank">Visa projekt</a></td>
-                        </tr>
-                        <tr>
-                            <td>TapTrack</td>
-                            <td>Applikation som jag utvecklade i ett skolprojekt i Datadriven verksamhetutveckling</td>
-                            <td>Python, Streamlit</td>
-                            <td><a href="https://github.com/jotaheri/School-projects/tree/main/TapTrack" 
-                                target="_blank">Visa projekt</a></td>
-                        </tr>
-                        <tr></tr>
-                        <td>C#</td>
-                        <td>Uppgifter från min kurs i C#</td>
-                        <td>C#</td>
-                        <td><a href="https://github.com/jotaheri/School-projects/tree/main/C%23" 
-                            target="_blank">Visa projekt</a></td>
-                    </tr>
-                        <tr></tr>
-                            <td>Webbutveckling</td>
-                            <td>Uppgifter från min kurs i Webbutveckling</td>
-                            <td>HTML, CSS, JavaScript</td>
-                            <td><a href="https://github.com/jotaheri/School-projects/tree/main/Webbutveckling_I" 
-                                target="_blank">Visa projekt</a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div data-role="collapsibleset" data-collapsed-icon="carat-r" data-expanded-icon="carat-d">
+                    <div data-role="collapsible">
+                        <h4>Cosmic Evader</h4>
+                        <p><strong>Beskrivning:</strong> Spel som jag utvecklade i ett skolprojekt i Python</p>
+                        <p><strong>Tekniker:</strong> Python, PyGame</p>
+                        <a href="https://github.com/jotaheri/School-projects/tree/main/Cosmic%20Evader" target="_blank">Visa projekt</a></p>
+                    </div>
+    
+                    <div data-role="collapsible">
+                        <h4>TapTrack</h4>
+                        <p><strong>Beskrivning:</strong> Applikation som jag utvecklade i ett skolprojekt i Datadriven verksamhetutveckling</p>
+                        <p><strong>Tekniker:</strong> Python, Streamlit</p>
+                        <a href="https://github.com/jotaheri/School-projects/tree/main/TapTrack" target="_blank">Visa projekt</a></p>
+                    </div>
+
+                    <div data-role="collapsible">
+                        <h4>C#</h4>
+                        <p><strong>Beskrivning:</strong> Olika projekt från min kurs i C#</p>
+                        <p><strong>Tekniker:</strong> C#</p>
+                        <a href="https://github.com/jotaheri/School-projects/tree/main/C%23" target="_blank">Visa projekt</a></p>
+                    </div>
+
+                    <div data-role="collapsible">
+                        <h4>Webbutveckling</h4>
+                        <p><strong>Beskrivning:</strong> Olika projekt från min kurs i Webbutveckling</p>
+                        <p><strong>Tekniker:</strong> HTML, CSS, JavaScript</p>
+                        <a href="https://github.com/jotaheri/School-projects/tree/main/Webbutveckling_I" target="_blank">Visa projekt</a></p>
+                    </div>
+                </div>
             </div>
 
         </div>
