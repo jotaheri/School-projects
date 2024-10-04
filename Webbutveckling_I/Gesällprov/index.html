@@ -17,17 +17,20 @@
                     data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
                 </form>
                 <h3>Hem</h3>
+                <a href="#" data-rel="back" class="ui-btn ui-mini ui-btn-right" id="back">Tillbaka</a>
             </div>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#secondPage">Sida två</a></li>
-                    <li><a href="#aboutMe">Om mig</a></li>
+                    <li><a href="#secondPage" id="page1">Sida två</a></li>
+                    <li><a href="#aboutMe" id="page2">Om mig</a></li>
                 </ul>
             </div>
         </div>
 
-        <div data-role="content" class="ui-content">         
-            <p>Välkommen till min hemsida som jag utvecklar med hjälp av jQuery Mobiles gränssnittsbibliotek för mobila enheter</p>
+        <div data-role="content" class="ui-content">
+            <div class="my-content">
+                <p>Välkommen till min hemsida som jag utvecklar med hjälp av jQuery Mobiles gränssnittsbibliotek för mobila enheter</p>
+            </div>        
         </div>
 
         <div data-role="footer" data-position="fixed" data-id="footer" class="my-footer">
@@ -38,7 +41,7 @@
                         data-transition="pop" id="popupBtn">Lämna feedback</a>
                         <div data-role="popup" id="feedbackWindow" data-overlay-theme="b" data-dismissible="false">
                             <div data-role="header" data-theme="a">
-                                <h1>Feedback formulär</h1>
+                                <h1>Feedbackformulär</h1>
                             </div>
                             <div role="main" class="ui-content"></div>
                                 <p>Var god fyll i fälten nedan för att lämna feedback</p>
@@ -65,8 +68,8 @@
                                 </form>
                             </div>
                     </li>
-                    <li><a href="mailto:johannestaheri@gmail.com">Mail</a></li>
-                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:johannestaheri@gmail.com" id="mail">Mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank" id="linkedIn">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -82,17 +85,20 @@
                     data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
                 </form>
                 <h3>Sida två</h3>
+                <a href="#" data-rel="back" class="ui-btn ui-mini ui-btn-right" id="back">Tillbaka</a>
             </div>
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#homePage">Hem</a></li>
-                        <li><a href="#aboutMe">Om mig</a></li>
+                        <li><a href="#homePage" id="page1">Hem</a></li>
+                        <li><a href="#aboutMe" id="page2">Om mig</a></li>
                     </ul>
                 </div>
             </div>
 
         <div data-role="content" class="ui-content">
-            <p>Sida två</p>
+            <div class="my-content">   
+                <p>Sida två</p>
+            </div>
         </div>
         
         <div data-role="footer" data-position="fixed" class="my-footer">
@@ -100,10 +106,10 @@
                 <ul>
                     <li>
                         <a href="#feedbackWindow2" data-rel="popup" data-position-to="window" 
-                        data-transition="pop" id="popupBtn2">Lämna feedback</a>
+                        data-transition="pop" id="popupBtn">Lämna feedback</a>
                         <div data-role="popup" id="feedbackWindow2" data-overlay-theme="b" data-dismissible="false">
                             <div data-role="header" data-theme="a">
-                                <h1>Feedback formulär</h1>
+                                <h1>Feedbackformulär</h1>
                             </div>
                             <div role="main" class="ui-content">
                                 <p>Var god fyll i fälten nedan för att lämna feedback</p>
@@ -131,8 +137,8 @@
                             </div>    
                         </div>
                     </li>
-                    <li><a href="mailto:johannestaheri@gmail.com">Mail</a></li>
-                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:johannestaheri@gmail.com" id="mail">Mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank" id="linkedIn">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -148,17 +154,65 @@
                     data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
                 </form>
                 <h3>Om mig</h3>
+                <a href="#" data-rel="back" class="ui-btn ui-mini ui-btn-right" id="back">Tillbaka</a>
             </div>
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#homePage">Hem</a></li>
-                        <li><a href="#secondPage">Sida två</a></li>
+                        <li><a href="#homePage" id="page1">Hem</a></li>
+                        <li><a href="#secondPage" id="page2">Sida två</a></li>
                     </ul>
                 </div>
             </div>
 
         <div data-role="content" class="ui-content">
-            <p>Om mig</p>
+            <div class="my-content">
+                <p>Om mig</p>
+            </div>  
+            
+            <div data-role="collapsible">
+                <h3>Mina projekt</h3>
+                <table data-role="table" class="ui-responsive">
+                    <thead>
+                        <tr>
+                            <th>Projekt</th>
+                            <th>Beskrivning</th>
+                            <th>Tekniker</th>
+                            <th>Länk</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cosmic Evader</td>
+                            <td>Spel som jag utvecklade i ett skolprojekt i Python</td>
+                            <td>Python, PyGame</td>
+                            <td><a href="https://github.com/jotaheri/School-projects/tree/main/Cosmic%20Evader"
+                                target="_blank">Visa projekt</a></td>
+                        </tr>
+                        <tr>
+                            <td>TapTrack</td>
+                            <td>Applikation som jag utvecklade i ett skolprojekt i Datadriven verksamhetutveckling</td>
+                            <td>Python, Streamlit</td>
+                            <td><a href="https://github.com/jotaheri/School-projects/tree/main/TapTrack" 
+                                target="_blank">Visa projekt</a></td>
+                        </tr>
+                        <tr></tr>
+                        <td>C#</td>
+                        <td>Uppgifter från min kurs i C#</td>
+                        <td>C#</td>
+                        <td><a href="https://github.com/jotaheri/School-projects/tree/main/C%23" 
+                            target="_blank">Visa projekt</a></td>
+                    </tr>
+                        <tr></tr>
+                            <td>Webbutveckling</td>
+                            <td>Uppgifter från min kurs i Webbutveckling</td>
+                            <td>HTML, CSS, JavaScript</td>
+                            <td><a href="https://github.com/jotaheri/School-projects/tree/main/Webbutveckling_I" 
+                                target="_blank">Visa projekt</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
         
         <div data-role="footer" data-position="fixed" class="my-footer">
@@ -166,10 +220,10 @@
                 <ul>
                     <li>
                         <a href="#feedbackWindow3" data-rel="popup" data-position-to="window" 
-                        data-transition="pop" id="popupBtn3">Lämna feedback</a>
+                        data-transition="pop" id="popupBtn">Lämna feedback</a>
                         <div data-role="popup" id="feedbackWindow3" data-overlay-theme="b" data-dismissible="false">
                             <div data-role="header" data-theme="a">
-                                <h1>Feedback formulär</h1>
+                                <h1>Feedbackformulär</h1>
                             </div>
                             <div role="main" class="ui-content">
                                 <p>Var god fyll i fälten nedan för att lämna feedback</p>
@@ -197,8 +251,8 @@
                             </div>    
                         </div>
                     </li>
-                    <li><a href="mailto:johannestaheri@gmail.com">Mail</a></li>
-                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank">LinkedIn</a></li>
+                    <li><a href="mailto:johannestaheri@gmail.com" id="mail">Mail</a></li>
+                    <li><a href="https://www.linkedin.com/in/johannes-taheri-54327b232/" target="_blank" id="linkedIn">LinkedIn</a></li>
                 </ul>
             </div>
         </div>

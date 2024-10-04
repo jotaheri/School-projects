@@ -500,5 +500,4 @@ $(document).on("pagebeforeshow", "#aboutMe", function() {
         var re = new RegExp(regexp);
         return this.optional(element) || re.test(value);
     });
-    
 });
