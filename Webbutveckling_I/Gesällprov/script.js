@@ -356,7 +356,7 @@ $(document).on("pagebeforeshow", "#secondPage", function() {
 
         // Kollar så inputen inte är tom
         if (city !== "") {
-            let apiKey = "3372c348a244fa02206240e73288471a"
+            let apiKey = "API_NYCKEL"
             let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
             // Använder jQuerys API för att skapa XMLHttpRequest
