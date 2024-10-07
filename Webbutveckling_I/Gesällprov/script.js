@@ -172,11 +172,13 @@ $(document).on("pagebeforeshow", "#homePage", function() {
 
 // Kod för #secondPage //
 $(document).on("pagebeforeshow", "#secondPage", function() {
-    // Kolla om "ui-page-theme-b" är satt på sidan och justera flipswitchens status därefter
+    // Kolla om "ui-page-theme-b" är satt på sidan och justera flipswitchens status samt bakgrundsfärgen för väderinformationen därefter
     if ($("#secondPage").hasClass("ui-page-theme-b")) {
         $("#flip-checkbox2").prop("checked", false).flipswitch("refresh");
+        $("#weatherInfo").css("background-color", "#2C2C2C");
     } else {
         $("#flip-checkbox2").prop("checked", true).flipswitch("refresh");
+        $("#weatherInfo").css("background-color", "#f0f0f0");
     }
     
     // Kod för flipswitch //
@@ -186,6 +188,7 @@ $(document).on("pagebeforeshow", "#secondPage", function() {
         if ($(this).is(":checked")) {
             // Ändrar till ljust tema (a)
             $("#secondPage").removeClass("ui-page-theme-b").addClass("ui-page-theme-a");
+            $("#weatherInfo").css("background-color", "#f0f0f0"); // Ändrar till ljus bakgrund för väderinformationen
            
             // Ändrar temat även för de andra sidorna
             $("#homePage").removeClass("ui-page-theme-b").addClass("ui-page-theme-a");
@@ -195,6 +198,7 @@ $(document).on("pagebeforeshow", "#secondPage", function() {
         else {
             // Ändrar till mörkt tema (b)
             $("#secondPage").removeClass("ui-page-theme-a").addClass("ui-page-theme-b");
+            $("#weatherInfo").css("background-color", "#2C2C2C"); // Ändrar till mörk bakgrund för väderinformationen
             
             $("#homePage").removeClass("ui-page-theme-a").addClass("ui-page-theme-b");
             $("#aboutMe").removeClass("ui-page-theme-a").addClass("ui-page-theme-b");
@@ -333,6 +337,56 @@ $(document).on("pagebeforeshow", "#secondPage", function() {
     $.validator.addMethod("regex", function (value, element, regexp) {
         var re = new RegExp(regexp);
         return this.optional(element) || re.test(value);
+    });
+
+    // Kod för att hämta och visa väder med hjälp av XMLHttpRequest och OpenWeatherMap API //
+    // Rensa och dölj väderinformationen varje gång sidan laddas
+    $("#cityName").text(""); 
+    $("#temperature").text(""); 
+    $("#feelsLike").text("");
+    $("#description").text("");  
+    $("#weatherInfo").hide();      
+    $("#errorMessage").hide();     
+    $("#city").val("");           
+
+    // Skapar en eventhanterare för Hämta väder knappen
+    $("#getWeather").on("click", function(event) {
+        event.preventDefault();
+        let city = $("#city").val().trim(); // Hämtar input och tar bort överflödiga mellanslag innan och efter strängen
+
+        // Kollar så inputen inte är tom
+        if (city !== "") {
+            let apiKey = "3372c348a244fa02206240e73288471a"
+            let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+
+            // Använder jQuerys API för att skapa XMLHttpRequest
+            $.ajax({
+                url: apiUrl,
+                type: "GET",
+                dataType: "json",
+                success: function(data) {
+                    // Visar väderinformationen
+                    $("#cityName").text(data.name);
+                    $("#temperature").text(`${data.main.temp} °C`);
+                    $("#feelsLike").text(`${data.main.feels_like} °C`);
+                    $("#description").text(data.weather[0].description);
+                    $("#weatherInfo").show(); // Visar väderinformationen som är dold innan genom css
+                    $("#errorMessage").hide(); // Döljer eventuellt felmeddelande
+                },
+                // Felmeddelande
+                error: function() {
+                    $("#error").text("Det gick inte att hämta väderinformationen. Kontrollera att stadens namn är korrekt.");
+                    $("#errorMessage").show(); // Visar felmeddelandet som är dold innan genom css
+                    $("#weatherInfo").hide(); // Döljer väderinformationen om något går fel
+                }
+            });
+        }
+        // Om inte if-villkoret uppfylls
+        else {
+            $("#error").text("Vänligen ange en stad.");
+            $("#errorMessage").show();
+            $("#weatherInfo").hide(); // Döljer väderinformationen om ingen stad anges
+        }
     });
 });
 

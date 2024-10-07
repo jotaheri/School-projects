@@ -21,9 +21,9 @@
             </div>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#homePage" id="page1">Hem</a></li>
-                        <li><a href="#secondPage" id="page2">Sida två</a></li>
-                        <li><a href="#aboutMe" id="page3">Om mig</a></li>
+                    <li><a href="#homePage" data-transition="none" id="page1">Hem</a></li>
+                        <li><a href="#secondPage" data-transition="none" id="page2">Väder</a></li>
+                        <li><a href="#aboutMe" data-transition="none" id="page3">Om mig</a></li>
                 </ul>
             </div>
         </div>
@@ -84,22 +84,38 @@
                     <input type="checkbox" data-role="flipswitch" name="flip-checkbox2" id="flip-checkbox2" data-on-text="Ljust" 
                     data-off-text="Mörkt" data-wrapper-class="custom-label-flipswitch" data-mini="true" checked>
                 </form>
-                <h3>Sida två</h3>
+                <h3>Väder</h3>
                 <a href="#" data-rel="back" class="ui-btn ui-mini ui-btn-left" id="back">Tillbaka</a>
             </div>
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#homePage" id="page1">Hem</a></li>
-                        <li><a href="#secondPage" id="page2">Sida två</a></li>
-                        <li><a href="#aboutMe" id="page3">Om mig</a></li>
+                        <li><a href="#homePage" data-transition="none" id="page1">Hem</a></li>
+                        <li><a href="#secondPage" data-transition="none" id="page2">Väder</a></li>
+                        <li><a href="#aboutMe" data-transition="none" id="page3">Om mig</a></li>
                     </ul>
                 </div>
             </div>
 
         <div data-role="content" class="ui-content">
             <div class="my-content">   
-                <p>Sida två</p>
+                <p>Här kan du hämta aktuell väderdata med hjälp av OpenWeatherMaps API 
+                    och informationen uppdateras dynamiskt på sidan med jQuerys API för XMLHttpReques</p>
+
+                <form id="weatherForm">
+                    <label for="city" class="ui-hidden-accessible">Ange stad:</label>
+                    <input type="text" name="city" id="city" placeholder="Ange stad">
+                    <button id="getWeather" data-role="button">Hämta väder</button>
+                </form>
+                
+                <div id="weatherInfo">
+                    <h2>Väder i <span id="cityName"></span></h2>
+                    <p>Temperatur: <span id="temperature"></span></p>
+                    <p>Känns som: <span id="feelsLike"></span></p>
+                    <p>Väderbeskrivning: <span id="description"></span></p>
+                </div>
+                <p id="errorMessage"><span id="error"></span></p>
             </div>
+
         </div>
         
         <div data-role="footer" data-position="fixed" class="my-footer">
@@ -158,9 +174,9 @@
             </div>
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#homePage" id="page1">Hem</a></li>
-                        <li><a href="#secondPage" id="page2">Sida två</a></li>
-                        <li><a href="#aboutMe" id="page3">Om mig</a></li>
+                        <li><a href="#homePage" data-transition="none" id="page1">Hem</a></li>
+                        <li><a href="#secondPage" data-transition="none" id="page2">Väder</a></li>
+                        <li><a href="#aboutMe" data-transition="none" id="page3">Om mig</a></li>
                     </ul>
                 </div>
             </div>
@@ -225,9 +241,7 @@
                         <iframe id="resumeIframe" width="100%" height="500px"></iframe>
                     </div>
                 </div>
-
             </div>
-
 
         </div>
         
