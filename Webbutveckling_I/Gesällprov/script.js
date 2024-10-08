@@ -320,7 +320,7 @@ $(document).on("pagebeforeshow", "#secondPage", function() {
         // Kontrollerar så inputen inte är tom
         if (city !== "") {
             let apiKey = "ENTER_API_KEY_HERE" // Api-nyckeln från OpenWeatherMap
-            let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`; // API-länken för att hämta väderdata baserat på stadens namn och API-nyckeln
+            let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=se&appid=${apiKey}`; // API-länken för att hämta väderdata baserat på stadens namn och API-nyckeln
 
             // Använder jQuerys $.ajax-metod för att göra en GET-förfrågan till OpenWeatherMap API och hämta väderdata
             $.ajax({
