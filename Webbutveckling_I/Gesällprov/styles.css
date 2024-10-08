@@ -16,8 +16,8 @@
         box-sizing: border-box;
         height: 100%;
         min-height: 44px; 
-        line-height: 24px; /* Samma som höjden på knappen för vertikal centrering */
-        text-align: center; /* Horisontell centrering */
+        line-height: 24px;
+        text-align: center;
     }
 
     #feedbackWindow, #feedbackWindow2, #feedbackWindow3 {
@@ -34,8 +34,8 @@
     }
 
     .project-row {
-        flex-direction: column; /* Rada upp informationen vertikalt på mindre skärmar */
-        align-items: flex-start; /* Justera texten till vänster */
+        flex-direction: column;
+        align-items: flex-start;
         margin-bottom: 10px;
     }
 
